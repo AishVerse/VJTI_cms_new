@@ -4,20 +4,77 @@ export function LandingPage() {
   return (
     <div className="landing-page">
       {/* ── White Header ─────────────────────────────────────── */}
-      <header className="landing-header" id="landing-header">
-        <div className="landing-header-inner">
-          <Link to="/" className="landing-logo-link">
-            <img
-              src="/assets/vjti-logo-wide.png"
-              alt="Veermata Jijabai Technological Institute"
-              className="landing-logo-img"
-            />
-          </Link>
-          <Link to="/login" className="landing-login-btn" id="landing-login-btn">
-            Login
-          </Link>
-        </div>
-      </header>
+    <header className="landing-header">
+  <div className="landing-header-inner">
+
+    <Link
+      to="/"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "12px"
+      }}
+    >
+      {/* LOGO */}
+      <img
+        src="/assets/vjti-logo.png"
+        alt="VJTI Logo"
+        style={{
+          height: "55px",
+          width: "auto",
+          objectFit: "contain",
+          background: "white",
+          padding: "4px",
+          borderRadius: "6px"
+        }}
+      />
+
+      {/* TEXT (THIS WAS MISSING) */}
+      <div style={{ display: "flex", flexDirection: "column", color: "white" }}>
+        <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+          VJTI CMS
+        </span>
+        <span style={{ fontSize: "12px", opacity: 0.9 }}>
+          Complaint Management System
+        </span>
+      </div>
+    </Link>
+
+    {/* LOGIN BUTTON */}
+    <Link to="/login" className="landing-login-btn">
+      Login
+    </Link>
+
+  </div>
+</header>
+      {/* <header className="landing-header">
+  <div className="landing-header-inner">
+
+    <Link
+      to="/"
+      style={{
+        display: "flex",
+        alignItems: "center"
+      }}
+    >
+      <img
+        src="/assets/vjti-logo.png"
+        alt="VJTI Logo"
+        style={{
+          height: "60px",
+          width: "auto",
+          objectFit: "contain",
+          display: "block"
+        }}
+      />
+    </Link>
+
+    <Link to="/login" className="landing-login-btn">
+      Login
+    </Link>
+
+  </div>
+</header> */}
 
       {/* ── Red Navigation Bar ───────────────────────────────── */}
       <nav className="landing-nav" id="landing-nav">
@@ -117,3 +174,5 @@ export function LandingPage() {
     </div>
   );
 }
+
+

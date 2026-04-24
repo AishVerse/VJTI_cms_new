@@ -74,6 +74,7 @@ export function LoginPage() {
                 src="/assets/vjti-logo.png"
                 alt="Veermata Jijabai Technological Institute"
                 className="vjti-logo-img"
+              
               />
             </div>
 

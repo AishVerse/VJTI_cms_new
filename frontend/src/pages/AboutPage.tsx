@@ -13,6 +13,7 @@ export function AboutPage() {
               className="landing-logo-img"
             />
           </Link>
+          <h1 className="landing-title">Campus Complaint Management System</h1>
           <Link to="/login" className="landing-login-btn" id="about-login-btn">
             Login
           </Link>
